@@ -57,17 +57,17 @@
     width: 50px;
 }
 
-.selected-symbol-preview {
+.selected_symbol_preview {
     border: 2px solid orange;
 }
 
 
 /*Selectable*/
 
-.ui-selected {
+.ui_selected {
     background-image: url(../img/black-twill.png), url(../img/brushed-alum.png);
 }
-.ui-selectable-helper {
+.ui_selectable_helper {
     border: 1px dotted #ddd;
     position: absolute;
     z-index: 1000;

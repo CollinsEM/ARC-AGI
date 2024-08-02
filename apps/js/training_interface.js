@@ -36,7 +36,7 @@ function syncFromDataGridToEditionGrid() {
 }
 
 function getSelectedSymbol() {
-    selected = $('#symbol_picker .selected-symbol-preview')[0];
+    selected = $('#symbol_picker .selected_symbol_preview')[0];
     return $(selected).attr('symbol');
 }
 
@@ -276,9 +276,9 @@ $(document).ready(function () {
     $('#symbol_picker').find('.symbol_preview').click(function(event) {
         symbol_preview = $(event.target);
         $('#symbol_picker').find('.symbol_preview').each(function(i, preview) {
-            $(preview).removeClass('selected-symbol-preview');
+            $(preview).removeClass('selected_symbol_preview');
         })
-        symbol_preview.addClass('selected-symbol-preview');
+        symbol_preview.addClass('selected_symbol_preview');
 
         toolMode = $('input[name=tool_switching]:checked').val();
         if (toolMode == 'select') {
